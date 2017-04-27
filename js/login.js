@@ -32,6 +32,7 @@ function verificarUsuario() {
 		ocultarOpcionesLoginInicio();
 		mostrarOpcionesLogin();
 		$('#idLabelNombreUsuario').html(usuario);
+		
 	}else{
 		alert('El campo Usuario se encuentra en blanco.');
 		$('#idInpUsuario').focus();
