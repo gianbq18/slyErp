@@ -20,6 +20,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="account-wall">
                 <img id="idImgFotoUsuario" class="profile-img" src="" alt="">
                 <form class="form-signin">
+				
+				 <h1 class="text-center login-title" id="idLabelNombreUsuario">
+					nombre usuario
+                </h1>
+				<span class="clearfix"></span>
+				
                 <input type="text"  id="idInpUsuario"  class="form-control" placeholder="Usuario" autofocus>
                 <input type="password" id="idInpClave" class="form-control " placeholder="Password">
 				<br>
