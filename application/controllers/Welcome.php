@@ -39,6 +39,36 @@ class Welcome extends CI_Controller {
 		
 	}
 	
+	/**verificacion de usuario si numero de intentos para acceder supera al permitido**/
+	public function verificarUsuarioIntentosInvalidos()
+	{
+		
+	}
 	
+	/**logica para cambiar clave**/
+	public function ingresoCambiarClave()
+	{
+		
+	}
+	
+	/**actualizar clave**/
+	public function actualizarClave()
+	{
+		
+	}
+	
+	
+	
+	/**logica de olvido su contraseña**/
+	public function ingresoOlvidoClave()
+	{
+		
+	}
+	
+	/**logica de nuevo envio de clave a correo y verificacion**/
+	public function generarClaveCorreo()
+	{
+		
+	}
 	
 }
