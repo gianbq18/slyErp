@@ -34,7 +34,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				class="pull-right need-help ">
 				ACEPTAR
 				</a><span class="clearfix"></span>
-					
                 <label class="checkbox pull-left " id="idLabelRecordarme">
                     <input type="checkbox" value="remember-me">
                     Remember me
