@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="col-sm-6 col-md-4 col-md-offset-4">
             <h1 class="text-center login-title">Bienvenido</h1>
             <div class="account-wall">
-                <img id="idImgFotoUsuario" class="profile-img" src="" alt="">
+                <img id="idImgFotoUsuario" class="profile-img" src="<?php echo base_url(); ?>images/sinPerfil.png" alt="sin perfil">
                 <form class="form-signin">
 				
 				 <h1 class="text-center login-title" id="idLabelNombreUsuario">
