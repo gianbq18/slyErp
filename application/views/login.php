@@ -8,6 +8,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href="<?php echo base_url(); ?>css/styleLogin.css" type="text/css"/>	
 	<link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.css" type="text/css"/>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap-theme.css" type="text/css"/>
+	
+	<script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/login.js"></script>
 </head>
 <body>
 <div class="container">
@@ -17,15 +20,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="account-wall">
                 <img id="idImgFotoUsuario" class="profile-img" src="" alt="">
                 <form class="form-signin">
-                <input type="text"  id="idInpUsuario"  class="form-control" placeholder="Usuario" required autofocus>
-                <input type="password" id="idInpClave" class="form-control" placeholder="Password" required>
-                <button id="idButtonVerificarUsuario" class="btn btn-lg btn-primary btn-block">
-                    Verificar</button>
-                <label class="checkbox pull-left">
+                <input type="text"  id="idInpUsuario"  class="form-control" placeholder="Usuario" autofocus>
+                <input type="password" id="idInpClave" class="form-control " placeholder="Password">
+				<br>
+				
+				<a href="javascript:void(0)" id="idAVerificarUsuario" onclick="verificarUsuario();" 
+				class="pull-right need-help">
+				VERIFICAR
+				</a><span class="clearfix"></span>
+				 
+				 
+				<a href="javascript:void(0)" id="idAIngresarSistema" 
+				class="pull-right need-help ">
+				ACEPTAR
+				</a><span class="clearfix"></span>
+					
+                <label class="checkbox pull-left " id="idLabelRecordarme">
                     <input type="checkbox" value="remember-me">
                     Remember me
                 </label>
-                <a href="#" id="idAOlvidoClave" class="pull-right need-help">Recuperar Contraseña </a><span class="clearfix"></span>
+                <a href="#" id="idAOlvidoClave" class="pull-right need-help ">Recuperar Contraseña </a><span class="clearfix"></span>
                 </form>
             </div>
         </div>
