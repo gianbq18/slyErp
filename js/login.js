@@ -99,7 +99,6 @@ function ingresarSistena(){
                 alert('No se puedo completar la operación - Revise los campos ingresados.')
             },
             success: function (data) {
-				alert(data);
 				location.href=base_url+"index.php/welcome/"+data;
             }
         });
@@ -118,7 +117,6 @@ function inicioSistemaRoles(){
                 alert('No se puedo completar la operación - Revise los campos ingresados.')
             },
             success: function (data) {
-				alert(data);
 				location.href=base_url+"index.php/welcome/"+data;
             }
         });
