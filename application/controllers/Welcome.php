@@ -72,4 +72,23 @@ class Welcome extends CI_Controller {
 		
 	}
 	
+	/**mostrar pagina para selccionar rol si contempla muchos**/
+	public function listaRolAsociados()
+	{
+		
+	}
+	/**rol usuario seleccionado/ lo ingresa como session datos del rol seleccionado**/
+	public function rolUusuarioSeleccionado()
+	{
+		
+	}
+	
+	/**mostrar inicio principal del sistema**/
+	public function inicioSistemaPrincipal()
+	{
+		
+	}
+	
+	
+	
 }
