@@ -13,13 +13,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script type="text/javascript" src="<?php echo base_url(); ?>js/login.js"></script>
 </head>
 <body>
+<input type="hidden"  id="base_url" value="<?php echo base_url(); ?>">   
 <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
             <h1 class="text-center login-title">Roles Asociados</h1>
             <div class="account-wall">
 			
-				<form class="form-signin">
+				<form class="form-signin" id="idFormRolSeleccionado">
 				
 				<h1 class="text-center login-title" id="idLabelNombreUsuarioRA">
 				<?php echo $nombreUsuario; ?>
@@ -31,8 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <input type="checkbox" value="remember-me">
                     Admnistrador
                 </label>
-               		 
-				<a href="javascript:void(0)" id="idASeleccionarRolUsuario" onclick="rolUusuarioSeleccionado();"
+				<a href="javascript:void(0)" id="idASeleccionarRolUsuario" onclick="inicioSistemaRoles();"
 				class="pull-right need-help ">
 				ACEPTAR
 				</a><span class="clearfix"></span>

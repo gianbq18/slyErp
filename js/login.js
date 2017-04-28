@@ -83,3 +83,44 @@ function actualizarClave(){
 	}
 }
 
+
+/**ingresar al sistema general**/
+function ingresarSistena(){
+	dataString = $('#idFormLogin').serialize();
+	url=base_url+"index.php/welcome/inicioSistemaPrincipal/";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: dataString,
+            beforeSend: function (data) {
+            },
+            error: function (data) {
+                console.log(data);
+                alert('No se puedo completar la operación - Revise los campos ingresados.')
+            },
+            success: function (data) {
+				alert(data);
+				location.href=base_url+"index.php/welcome/"+data;
+            }
+        });
+}
+
+/**ingresar al sistema general apartir de seleccionar un rol**/
+function inicioSistemaRoles(){	
+	url=base_url+"index.php/welcome/inicioSistemaRoles/5";
+        $.ajax({
+            type: "GET",
+            url: url,
+            beforeSend: function (data) {
+            },
+            error: function (data) {
+                console.log(data);
+                alert('No se puedo completar la operación - Revise los campos ingresados.')
+            },
+            success: function (data) {
+				alert(data);
+				location.href=base_url+"index.php/welcome/"+data;
+            }
+        });
+}
+

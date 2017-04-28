@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</a><span class="clearfix"></span>
 				
                 <img id="idImgFotoUsuario" class="profile-img" src="<?php echo base_url(); ?>images/sinPerfil.png" alt="sin perfil">
-                <form class="form-signin">
+                <form class="form-signin" id="idFormLogin" method="POST">
 				
 				<h1 class="text-center login-title" id="idLabelNombreUsuario"></h1>
 				<span class="clearfix"></span>
@@ -41,7 +41,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				 
 				 
 				<a href="javascript:void(0)" id="idAIngresarSistema" 
-				class="pull-right need-help "  >
+				class="pull-right need-help "  onclick="ingresarSistena();"  >
 				ACEPTAR
 				</a><span class="clearfix"></span>
                 <label class="checkbox pull-left " id="idLabelRecordarme">

@@ -13,6 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script type="text/javascript" src="<?php echo base_url(); ?>js/login.js"></script>
 </head>
 <body>
+<input type="hidden"  id="base_url" value="<?php echo base_url(); ?>">   
 <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
