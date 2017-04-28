@@ -14,12 +14,12 @@ function ocultarOpcionesLogin() {
 
 /**mostrar las opciones del login**/
 function mostrarOpcionesLogin() {
-	$('#idInpClave').show(200);
-	$('#idAIngresarSistema').show(200);
-	$('#idAOlvidoClave').show(200);
-	$('#idLabelRecordarme').show(200);
-	$('#idLabelNombreUsuario').show(200);
-	$('#idAVolverInicio').show(200);
+	$('#idInpClave').show(400);
+	$('#idAIngresarSistema').show(400);
+	$('#idAOlvidoClave').show(400);
+	$('#idLabelRecordarme').show(400);
+	$('#idLabelNombreUsuario').show(400);
+	$('#idAVolverInicio').show(400);
 }
 /**oculta las opciones del login verificar usuario**/
 function ocultarOpcionesLoginInicio() {
@@ -28,8 +28,8 @@ function ocultarOpcionesLoginInicio() {
 }
 /**mostrar las opciones del login verificar usuario**/
 function mostrarOpcionesLoginInicio() {
-	$('#idInpUsuario').show(200);
-	$('#idAVerificarUsuario').show(200);
+	$('#idInpUsuario').show(400);
+	$('#idAVerificarUsuario').show(400);
 }
 /**se verifica si existe el usuario ingresado**/
 function verificarUsuario() {
