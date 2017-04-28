@@ -60,9 +60,10 @@ class Welcome extends CI_Controller {
 	
 	
 	/**logica de olvido su contraseña**/
-	public function ingresoOlvidoClave()
+	public function ingresoOlvidoClave($nombreUsuario)
 	{
-		
+		$data['nombreUsuario']=$nombreUsuario;
+		$this->load->view('olvidoContrasena',$data);
 	}
 	
 	/**logica de nuevo envio de clave a correo y verificacion**/

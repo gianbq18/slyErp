@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	base_url=$('#base_url').val();
 	/**ocultar las siguientes opciones**/
 	ocultarOpcionesLogin();	
 });
@@ -52,5 +53,33 @@ function volverLoginInicio() {
 	mostrarOpcionesLoginInicio();
 	$('#idLabelNombreUsuario').html('');
 	$('#idInpUsuario').val('');
+}
+
+/**redirecciona a la pagina para recuperar clave**/
+function ingresoOlvidoClave()
+{
+	nombreUsuario=$('#idInpUsuario').val();
+	location.href=base_url+"index.php/welcome/ingresoOlvidoClave/"+nombreUsuario;
+}
+
+/**envia informacion al controlador para generar clave y enviar un correo**/
+function generarClaveCorreo(){
+	
+	
+}
+/**Nos permite actualizar la clave**/
+function actualizarClave(){
+	/**verificamos que las contraseñas sean iguales**/
+	claveNueva=$("#idInpClaveNueva").val();
+	claveNuevaRepetir=$("#idInpClaveNuevaRepetir").val();
+	if(claveNueva!='' && claveNuevaRepetir!=''){
+		if(claveNueva==claveNuevaRepetir){
+			
+		}else{
+			alert('contraseñas no son iguales');
+		}
+	}else{
+		alert('contraseña se encuentra en blanco');
+	}
 }
 
