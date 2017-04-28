@@ -42,7 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</a><span class="clearfix"></span>
                 <label class="checkbox pull-left " id="idLabelRecordarme">
                     <input type="checkbox" value="remember-me">
-                    Remember me
+                    recordarme
                 </label>
                 <a href="#" id="idAOlvidoClave" class="pull-right need-help ">Recuperar Contraseña </a><span class="clearfix"></span>
                 </form>
