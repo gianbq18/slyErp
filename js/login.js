@@ -9,6 +9,7 @@ function ocultarOpcionesLogin() {
 	$('#idAOlvidoClave').hide();
 	$('#idLabelRecordarme').hide();
 	$('#idLabelNombreUsuario').hide();
+	$('#idAVolverInicio').hide();
 }
 
 /**mostrar las opciones del login**/
@@ -17,14 +18,19 @@ function mostrarOpcionesLogin() {
 	$('#idAIngresarSistema').show(200);
 	$('#idAOlvidoClave').show(200);
 	$('#idLabelRecordarme').show(200);
-	$('#idLabelNombreUsuario').toggle(200);
+	$('#idLabelNombreUsuario').show(200);
+	$('#idAVolverInicio').show(200);
 }
 /**oculta las opciones del login verificar usuario**/
 function ocultarOpcionesLoginInicio() {
 	$('#idInpUsuario').hide();
 	$('#idAVerificarUsuario').hide();
 }
-
+/**mostrar las opciones del login verificar usuario**/
+function mostrarOpcionesLoginInicio() {
+	$('#idInpUsuario').show(200);
+	$('#idAVerificarUsuario').show(200);
+}
 /**se verifica si existe el usuario ingresado**/
 function verificarUsuario() {
 	usuario=$('#idInpUsuario').val();
@@ -39,3 +45,12 @@ function verificarUsuario() {
 	}
 	
 }
+
+/**volver a la opcion de login inicial**/
+function volverLoginInicio() {
+	ocultarOpcionesLogin();	
+	mostrarOpcionesLoginInicio();
+	$('#idLabelNombreUsuario').html('');
+	$('#idInpUsuario').val('');
+}
+
